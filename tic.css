@@ -1,3 +1,12 @@
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Amatic SC', cursive;
+    background-color: #a9a9a966;
+}
+
 tr{
     width: 399px;
 }
@@ -18,16 +27,51 @@ table tr:last-child td{
 table tr td:last-child {
     border-right: 0;
 }
-/* Doppellinien werden zu einer Linie */
+
+td:hover {
+    background-color: rgba(177, 233, 219, 0.315);
+    cursor: pointer;
+}
+
+/* Doppellinien werden zu einer Linie mit b-collapse */
 table{
     border-collapse: collapse;
+    display: flex;
 }
 .circle{
     height: 40px;
     margin-left: 40px;
     position: absolute;
+    cursor: pointer;
 }
 .cross{
     height: 40px;
     margin-left: 40px;
+    cursor: pointer;
+}
+.d-none{
+    display: none;
+}
+.playersBar{
+    display: flex;
+    margin-bottom: 37px;
+    margin-top: 37px;
+    font-size: 33px;
+    font-weight: bold;
+}
+.playerCircle, .playerCross{
+    height: 40px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 34px;
+    }
+.playerCircle, .playerCross{
+ fill: black; 
+}
+.barContent{
+    display: flex;
+    align-items: center;
+}
+.playerInactive{
+    opacity: 0.5;
 }
