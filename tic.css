@@ -135,3 +135,12 @@ table {
     cursor: pointer;
     border: 1px solid rgba(0, 0, 0, 0.5);
 }
+
+@media (max-width: 900px){
+.gameOver{
+    height: 493px !important;
+    width: 353px !important;
+    margin-bottom: 161px !important;
+}
+
+}
