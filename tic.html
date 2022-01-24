@@ -17,6 +17,8 @@
 
 <body>
 
+    <img class="gameOver d-none" id="gameOver" src="./img/gameOver.jpg">
+    <button class="button d-none" id="button" onclick="restartGame()">RESTART</button>
     <div class="playersBar">
         <div class="barContent playerInactive" id="player1">
             <img class="playerCircle" src="./img/round.png">
@@ -28,7 +30,18 @@
         </div>
     </div>
 
-    <!--table>tr>td*3 , um Gerüst unten zu bekommen-->
+
+    <div id="line1" class="horizontalLine" style="top: 206px;"></div>
+    <div id="line2" class="horizontalLine" style="top: 348px;"></div>
+    <div id="line3" class="horizontalLine" style="top: 488px;"></div>
+    <div id="line4" class="horizontalLine makeVertical" style="top: 346px; left: 95px;"></div>
+    <div id="line5" class="horizontalLine makeVertical" style="top: 346px; left: 236px;"></div>
+    <div id="line6" class="horizontalLine makeVertical" style="top: 346px; right: 107px;"></div>
+    <div id="line7" class="horizontalLine" style="top: 330px; transform: rotate(45deg) scaleX(0.0);"></div>
+    <div id="line8" class="horizontalLine" style="top: 331px; transform: rotate(-45deg)  scaleX(0.0);"></div>
+
+    <!--   table>tr>td*3 , um Gerüst unten zu bekommen  -->
+    
     <table>
         <tr>
             <td onclick="fillMatchfield(0)"><img id="circle-0" class="circle d-none" src="./img/round.png">
